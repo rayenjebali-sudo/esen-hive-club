@@ -59,11 +59,11 @@ body {
 }
 
 .logo-icon {
-  width: 32px; /* adjust size to fit your design */
+  width: 32px;
   height: 32px;
   object-fit: contain;
-  margin-right: 0.1rem; /* optional fine-tuning */
 }
+
 
 .logo-text {
   font-size: 1rem;
@@ -649,3 +649,9 @@ body {
   }
 }
 
+@media (max-width: 720px) {
+  .logo-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
