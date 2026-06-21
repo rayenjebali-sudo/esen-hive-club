@@ -55,19 +55,23 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  gap: 0.3rem; /* adjust spacing between logo and text */
 }
 
 .logo-icon {
-  font-size: 1.4rem;
+  width: 32px; /* adjust size to fit your design */
+  height: 32px;
+  object-fit: contain;
+  margin-right: 0.1rem; /* optional fine-tuning */
 }
 
 .logo-text {
-  font-size: 0.98rem;
-  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
+
 
 .nav {
   display: flex;
@@ -602,3 +606,46 @@ body {
 .gallery-item:hover img {
   transform: scale(1.08);
 }
+.footer {
+  max-width: var(--max-width);
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.85rem;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 220px;
+  text-align: right;
+}
+
+.footer-contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+}
+
