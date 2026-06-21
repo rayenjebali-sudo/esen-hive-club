@@ -585,3 +585,20 @@ body {
     padding-inline: 1rem;
   }
 }
+.gallery-item {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+  border-radius: inherit;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
